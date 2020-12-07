@@ -1,0 +1,7 @@
+<h1>index.html</h1>
+<%= form_with(model: @tweet, url: tweets_path, local: true) do |f| %>
+  <%= f.text_field :content %>
+<% end %>
+<% @tweets.each do |tweet| %>
+  <%= tweet.content %>
+  <% end %>
