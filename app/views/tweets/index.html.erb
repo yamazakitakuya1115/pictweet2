@@ -3,5 +3,7 @@
   <%= f.text_field :content %>
 <% end %>
 <% @tweets.each do |tweet| %>
-  <%= tweet.content %>
+  <div class="content">
+    <%= tweet.content %>
+  </div>
   <% end %>
