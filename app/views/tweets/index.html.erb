@@ -6,6 +6,6 @@
 <% @tweets.each do |tweet| %>
   <div class="content">
     <%= tweet.content %>
-    <%= tweet.created_at %>
+    <%= l tweet.created_at %>
   </div>
 <% end %>
