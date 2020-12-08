@@ -1,14 +1,14 @@
 <%= form_with(model: @tweet, url: tweets_path, local: true) do |f| %>
-  <%= f.text_field :content %>
+  <%= f.text_field :content, autocomplete: false %>
   <%= f.submit '送信' %>
 <% end %>
 <% @tweets.each do |tweet| %>
   <div class="content">
-    <div class="tweet-content">
-      <%= tweet.content %>
-    </div>
     <div class="tweet-time">
       <%= l tweet.created_at %>
+    </div>
+    <div class="tweet-content">
+      <%= tweet.content %>
     </div>
   </div>
 <% end %>
