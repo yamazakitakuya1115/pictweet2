@@ -10,5 +10,8 @@
     <div class="tweet-content">
       <%= tweet.content %>
     </div>
+    <div class="tweet-delete">
+      <%= link_to '削除', tweet_path(tweet.id), method: :delete %>
+    </div>
   </div>
 <% end %>
