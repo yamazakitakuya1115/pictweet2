@@ -9,7 +9,8 @@ class TweetsController < ApplicationController
   end
 
   def destroy
-    tweet = Tweet.find(:id)
+    id = params[:id].to_i
+    tweet = Tweet.find(id)
     tweet.delete
     redirect_to root_path
   end
