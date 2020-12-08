@@ -4,7 +4,11 @@
 <% end %>
 <% @tweets.each do |tweet| %>
   <div class="content">
-    <%= tweet.content %>
-    <%= l tweet.created_at %>
+    <div class="tweet-content">
+      <%= tweet.content %>
+    </div>
+    <div class="tweet-time">
+      <%= l tweet.created_at %>
+    </div>
   </div>
 <% end %>
