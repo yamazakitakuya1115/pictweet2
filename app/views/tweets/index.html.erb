@@ -1,6 +1,6 @@
 <h1>メモ帳</h1>
 <%= form_with(model: @tweet, url: tweets_path, local: true) do |f| %>
-  <%= f.text_field :content, autocomplete: false %>
+  <%= f.text_field :content, autocomplete: false, class: "form" %>
   <%= f.submit '送信' %>
 <% end %>
 <% @tweets.each do |tweet| %>
