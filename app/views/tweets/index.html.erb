@@ -1,4 +1,4 @@
-<h1>メモ帳</h1>
+<h1>PicTweet</h1>
 <%= form_with(model: @tweet, url: tweets_path, local: true) do |f| %>
   <%= f.text_field :content, autocomplete: false, class: "form" %>
   <%= f.submit '書き込み' %>
